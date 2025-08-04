@@ -154,6 +154,10 @@ ul {
 }
 
 @media (max-width: 768px) {
+  .links {
+    display: grid;
+  }
+
   .hero .links a {
     margin-top: 16px;
   }
