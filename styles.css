@@ -117,6 +117,42 @@ ul {
   background: #c7d2fe;
 }
 
+.dev-symbol {
+  font-size: 2rem;
+  color: #0c4a6e;
+  margin: 0.5rem;
+  display: inline-block;
+  transition: transform 0.5s ease, color 0.3s ease, text-shadow 0.5s ease;
+  cursor: pointer;
+  user-select: none;
+  position: relative;
+}
+
+.dev-symbol:hover {
+  transform: scale(1.5) rotate(360deg);
+  color: #4f46e5;
+  text-shadow: 0 0 10px #93c5fd, 0 0 20px #60a5fa;
+}
+
+.dev-symbol.clicked {
+  animation: bounce 0.4s ease;
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(1.5) rotate(360deg) translateY(0);
+  }
+  30% {
+    transform: scale(1.6) rotate(360deg) translateY(-8px);
+  }
+  60% {
+    transform: scale(1.5) rotate(360deg) translateY(4px);
+  }
+  100% {
+    transform: scale(1.5) rotate(360deg) translateY(0);
+  }
+}
+
 @media (max-width: 768px) {
   .hero .links a {
     margin-top: 16px;

@@ -1,3 +1,5 @@
+// tic-tac-toe
+
 const cells = document.querySelectorAll("#board .cell");
 const gameMessage = document.getElementById("game-message");
 
@@ -75,3 +77,13 @@ function handleClick(e) {
 }
 
 cells.forEach((cell) => cell.addEventListener("click", handleClick));
+
+// logo animation
+
+document.querySelector(".dev-symbol").addEventListener("click", function () {
+  this.classList.add("clicked");
+
+  setTimeout(() => {
+    this.classList.remove("clicked");
+  }, 400);
+});
