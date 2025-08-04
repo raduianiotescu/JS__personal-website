@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Blog | Lighthouse Accessibility Audit | Radu Ianiotescu | Frontend
+      Developer
+    </title>
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="blog-posts.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav class="top-nav">
+      <div class="nav-container">
+        <div class="nav-links">
+          <a href="../index.html" class="nav-link">Home</a>
+          <a href="../blog.html" class="nav-link">Blog</a>
+        </div>
+      </div>
+    </nav>
+
+    <header class="article-header">
+      <div
+        class="container"
+        style="display: flex; align-items: center; gap: 1rem"
+      >
+        <a href="../blog.html" class="back-button" aria-label="Back to Blog">
+          <i class="fas fa-arrow-left"></i> Back
+        </a>
+        <h1 style="margin: 0">Lighthouse Accessibility Audit</h1>
+      </div>
+    </header>
+
+    <main class="container" style="max-width: 700px; margin-top: 2rem">
+      <article>
+        <p style="color: #94a3b8; font-size: 0.9rem; margin-bottom: 1rem">
+          <i class="fas fa-user"></i> By Radu Ianiotescu &nbsp; | &nbsp;
+          <i class="fas fa-calendar-alt"></i> August 4, 2025
+        </p>
+
+        <p>
+          Making websites accessible isn’t just about compliance, it’s about
+          creating inclusive experiences for everyone. A powerful and simple way
+          to get started is by using <strong>Lighthouse</strong>, a free
+          auditing tool built right into Chrome. In this article, I’ll show you
+          exactly how to use Lighthouse in DevTools to generate an accessibility
+          report, and encourage you to run it on this very site!
+        </p>
+
+        <h2>What is Lighthouse?</h2>
+        <p>
+          Lighthouse is an open-source tool developed by Google that analyzes
+          web pages and provides performance, SEO, best practices, and, most
+          importantly, accessibility scores. It gives you a clear, actionable
+          breakdown of how your site performs and what can be improved.
+        </p>
+
+        <h2>How to Open Lighthouse in DevTools</h2>
+        <p>To run Lighthouse from Chrome:</p>
+        <ol>
+          <li>
+            Open the website you want to audit, try it on this site if you’d
+            like!
+          </li>
+          <li>
+            Right-click anywhere on the page and select
+            <strong>Inspect</strong> to open Chrome DevTools. You can also press
+            <code>Ctrl+Shift+I</code> (or <code>Cmd+Option+I</code> on Mac).
+          </li>
+          <li>
+            In DevTools, find the <strong>Lighthouse</strong> tab. If you don’t
+            see it, click the double arrow (<code>»</code>) at the top to expand
+            more tabs.
+          </li>
+        </ol>
+
+        <h2>Setting Up the Audit</h2>
+        <p>Once you’re in the Lighthouse tab:</p>
+        <ul>
+          <li>
+            Under <strong>Categories</strong>, make sure only
+            <strong>Accessibility</strong> is checked.
+          </li>
+          <li>
+            Choose the device type: <strong>Mobile</strong> or
+            <strong>Desktop</strong>. Desktop is fine for now.
+          </li>
+          <li>
+            Click the blue <strong>Analyze page load</strong> button to start
+            the audit.
+          </li>
+        </ul>
+
+        <img
+          class="blog-post-image"
+          src="../assets/images/lighthouse-a11y-picture.png"
+          alt="Lighthouse report trigger"
+        />
+
+        <p>
+          Chrome will reload the page, run the audit, and display a detailed
+          report within a few seconds.
+        </p>
+
+        <h2>Understanding the Report</h2>
+        <p>
+          At the top of your report, you’ll see an
+          <strong>Accessibility score</strong> from 0 to 100. Below that,
+          Lighthouse lists specific issues found on the page. Some common items
+          might include:
+        </p>
+        <ul>
+          <li>Images without descriptive <code>alt</code> text</li>
+          <li>Low contrast between text and background</li>
+          <li>Buttons or links missing accessible names</li>
+          <li>Elements not reachable by keyboard navigation</li>
+        </ul>
+
+        <img
+          class="blog-post-image"
+          src="../assets/images/lighthouse-a11y-picture-2.png"
+          alt="Lighthouse result"
+        />
+
+        <p>
+          Each issue comes with an explanation and suggestions on how to fix it,
+          including links to documentation for deeper learning.
+        </p>
+
+        <h2>Try It Yourself</h2>
+        <p>
+          Open DevTools right now and run a Lighthouse audit on this page. See
+          how it performs! Then, try it on a few other sites you visit
+          regularly. You’ll be surprised how many small issues can add up, and
+          how easy they are to start fixing.
+        </p>
+
+        <p>
+          Accessibility doesn’t have to be intimidating. With tools like
+          Lighthouse, it’s easy to identify opportunities for improvement and
+          build more inclusive websites, one audit at a time.
+        </p>
+      </article>
+    </main>
+
+    <footer class="footer">
+      <p>© 2025 CodingWR - Coding With Radu</p>
+    </footer>
+  </body>
+</html>
