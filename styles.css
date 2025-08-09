@@ -275,6 +275,13 @@ ul {
   color: #ccc;
 }
 
+.blog-year {
+  text-decoration: overline;
+  border-bottom: none;
+  margin-bottom: 0px;
+  text-align: center;
+}
+
 @media (max-width: 768px) {
   .blog-card {
     margin: 40px;
