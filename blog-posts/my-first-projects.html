@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Blog | My First Projects | Radu Ianiotescu | Frontend Developer
+    </title>
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="blog-posts.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav class="top-nav">
+      <div class="nav-container">
+        <div class="nav-links">
+          <a href="../index.html" class="nav-link">Home</a>
+          <a href="../blog.html" class="nav-link">Blog</a>
+        </div>
+      </div>
+    </nav>
+
+    <header class="article-header">
+      <div
+        class="container"
+        style="display: flex; align-items: center; gap: 1rem"
+      >
+        <a href="../blog.html" class="back-button" aria-label="Back to Blog">
+          <i class="fas fa-arrow-left"></i> Back
+        </a>
+        <h1 style="margin: 0">My First Projects</h1>
+      </div>
+    </header>
+
+    <main class="container" style="max-width: 700px; margin-top: 2rem">
+      <article>
+        <p style="color: #94a3b8; font-size: 0.9rem; margin-bottom: 1rem">
+          <i class="fas fa-user"></i> By Radu Ianiotescu &nbsp; | &nbsp;
+          <i class="fas fa-calendar-alt"></i> August 9, 2025
+        </p>
+
+        <p>
+          Looking back at my time in university, two projects stand out as the
+          cornerstones of my journey into web development. They weren’t just
+          assignments, they were the first real opportunities where theory met
+          practice, where I discovered how much I enjoyed building interactive,
+          responsive, and user-focused applications. These projects also
+          introduced me to technologies and practices that continue to influence
+          how I work today.
+        </p>
+
+        <section>
+          <h2>1. Residential Building Management Web Application</h2>
+          <p>
+            The first major milestone came during my bachelor’s degree: a web
+            application designed to manage a residential building. At first
+            glance, it sounded simple, but the challenge was to make it
+            <strong>scalable, secure, and cloud-based</strong>. This meant I
+            couldn’t just build a static site and call it a day. I had to learn
+            how to design for flexibility and future growth.
+          </p>
+          <p>
+            The project’s backbone was the <strong>MERN stack</strong>, MongoDB
+            for the database, Express.js for server-side routing, React.js for
+            the user interface, and Node.js for backend logic. Choosing React
+            for the frontend was a turning point for me. It was the first time I
+            experienced the power of a component-based architecture, where
+            reusable UI elements made the application more maintainable and
+            dynamic.
+          </p>
+          <div>
+            On the cloud side, I dove deep into
+            <strong>Amazon Web Services</strong>:
+            <ul>
+              <li><strong>EC2</strong> for hosting the application server</li>
+              <li>
+                <strong>S3</strong> for storing user-uploaded documents securely
+              </li>
+              <li><strong>Route 53</strong> for DNS management</li>
+              <li><strong>SES</strong> for email notifications</li>
+              <li><strong>IAM</strong> for secure role-based access control</li>
+            </ul>
+          </div>
+          <p>
+            The application offered features like a secure login system, a
+            dashboard for both residents and administrators, a forum for
+            community discussions, a document section for building policies, and
+            a booking system for shared facilities. All of this was tied
+            together by an authentication flow that ensured different access
+            levels for admins and users.
+          </p>
+        </section>
+
+        <section>
+          <h2>2. An AI-Enhanced E-Commerce Web App</h2>
+          <p>
+            Fast forward to my master’s degree, and I was ready for a bigger
+            challenge: combining modern web development with artificial
+            intelligence. This project aimed to create a full-fledged
+            <strong>E-Commerce web application</strong> and enhance it with
+            open-source AI services to improve user experience.
+          </p>
+          <p>
+            Like my first project, the frontend was built with
+            <strong>React.js</strong>, but this time my component architecture
+            and state management skills had matured. The backend ran on
+            <strong>Node.js</strong>, with an API structure that could easily
+            integrate with various AI services.
+          </p>
+          <div>
+            The AI features were the heart of the project:
+            <ul>
+              <li>
+                <strong>Speech recognition</strong> (Speech-to-Text) so users
+                could search for products or build their shopping carts using
+                voice commands
+              </li>
+              <li>
+                <strong>Image-based search</strong> to find similar products by
+                uploading photos
+              </li>
+              <li>
+                <strong>Personalized product recommendations</strong> using user
+                browsing history and preference patterns
+              </li>
+            </ul>
+          </div>
+          <p>
+            All of this was done with a
+            <strong>mobile-first design</strong> mindset, ensuring the
+            application felt natural and fluid on smartphones, a must for
+            today’s online shoppers. The combination of frontend polish, backend
+            integration, and AI experimentation made this project one of the
+            most exciting I’ve ever worked on.
+          </p>
+          <p>
+            By the time I completed this project, I had not only deepened my
+            understanding of React and full-stack workflows, but I had also
+            gained firsthand experience in working with
+            <strong>AI-powered tools</strong>, something that has only grown
+            more relevant in web development.
+          </p>
+        </section>
+
+        <section>
+          <h2>Looking Back</h2>
+          <p>
+            Together, these two projects formed the foundation of my technical
+            skill set. The first taught me the value of cloud infrastructure and
+            building scalable apps. The second pushed me into the future with AI
+            integrations and mobile-first design.
+          </p>
+          <p>
+            These two projects were the perfect example of learning while doing,
+            and my passion for development started with the joy of seeing them
+            achieving their purposes.
+          </p>
+        </section>
+      </article>
+    </main>
+
+    <footer class="footer">
+      <p>© 2025 CodingWR</p>
+    </footer>
+  </body>
+</html>
